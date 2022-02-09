@@ -1,0 +1,13 @@
+# we want to create an array from random numbers and that it will only have the number once
+
+import random
+
+	def add_rand(k):
+		n=random.randrange(0,k)
+		return n
+
+s=set()
+k=10000
+while(len(s)!=k):
+	s.add(add_rand(k))
+
