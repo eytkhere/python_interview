@@ -1,0 +1,20 @@
+# flip image
+# 1) horizontally 2) invert
+
+image=[[1,0,1],[0,1,1],[1,0,0]]
+i=0
+len_img=len(image)
+while(i<len_img):
+	n=image[i]
+	image[i]=n[::-1]
+	i+=1
+i=0
+
+while(i<len_img):
+	j=0
+	while(j<len_img):
+		n=image[i][j]
+		image[i][j]=n^1
+		j+=1
+	i+=1
+
