@@ -1,0 +1,13 @@
+# check if a word is a palindrome using rcursion
+# palindrome - a word, phrase, or sequence that reads the same backward as forward
+
+# base=>len(word)=0 or not equal
+# ex:racecar
+
+def palindorme(str1):
+		if(len(str1)==0):
+			return 'True'
+		elif(str1[0]==str1[-1]):
+			return palindorme(str1[1:-2])
+		else:
+			return 'False'
