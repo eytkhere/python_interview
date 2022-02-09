@@ -1,0 +1,12 @@
+# using recursion to solve the fibonnaci sequence
+
+// 0, 1, 1, 2, 3, 5, 8, 13, 21, 34
+
+base=>n=0 or n=1
+	def fibonnaci(n):
+		if n in [0,1]:
+			return n
+		else:
+			return factorial(n-1)+factorial(n-2)
+print(fibonnaci(5))
+
