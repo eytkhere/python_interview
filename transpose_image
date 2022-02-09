@@ -1,0 +1,17 @@
+# transpose an image
+
+image=[[1,1,1],[0,1,1],[1,0,0]]
+
+len_img=len(image)
+i=0
+while(i<len_img):
+	j=0
+	if(j<i):
+		j=i
+	while(j<len_img and i<j):
+		n=image[i][j]
+		image[i][j]=image[j][i]
+		image[j][i]=n
+		j+=1
+	i+=1
+  
