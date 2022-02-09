@@ -1,0 +1,20 @@
+# total number of bits to be flipped between 2 different numbers
+
+n=17 
+# 010001
+k=7  
+# 000111
+ans=bin(n^k)
+"""
+010001 ^
+000111
+010110
+"""
+sum=0
+ans_str=ans[2:]
+for i in ans_str:
+	if(i=='1'):
+		sum+=1
+print(sum)
+
+
