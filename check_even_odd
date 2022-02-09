@@ -1,0 +1,16 @@
+# only allowed to use bitwise operations
+# check if number is even or odd
+
+num=5 // 101
+ans=num&1
+"""
+_ALGORITHM_
+101 &
+001
+---
+001
+"""
+if(ans==1):
+	print("odd")
+else:
+	print("even")
