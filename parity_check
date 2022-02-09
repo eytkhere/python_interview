@@ -1,0 +1,14 @@
+# check for parity
+
+n=17 
+#010001
+sum=0
+for i in n:
+	if(i==1):
+		sum+=1
+// check for even or odd
+ans=sum^1
+if(ans!=0):
+	odd
+else:
+	even
