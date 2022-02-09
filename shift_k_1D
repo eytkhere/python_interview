@@ -1,0 +1,28 @@
+# shift 1D grid by k places
+
+image=[1,2,4,8,16,32]
+len_img=len(image)-1
+k=3
+n=0
+# -cw- clockwise
+while(n<k):
+	i=0
+	while(i<len_img):
+		m=image[-1]
+		image[len_img-i]=image[len_img-i-1]
+		i+=1
+	image[0]=m
+	n+=1
+# -ccw- counter clockwise
+while(n<k):
+	i=0
+	while(i<len_img):
+		m=image[0]
+		image[i]=image[i+1]
+		i+=1
+	image[len_img]=m	
+	n+=1
+
+
+
+
